@@ -1,11 +1,4 @@
-body{
-    display: flex;
-}
-
-.image{
-    flex-grow: 4;
-}
-
-.form{
-    flex-grow: 5;
+*{
+    margin: 0;
+    padding: 0;
 }
