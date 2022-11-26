@@ -35,6 +35,7 @@ body{
     flex-direction: column;
     justify-content: center;
     background-color: var(--bg-color);
+    padding: 10px;
 }
 
 .bg{
@@ -56,8 +57,4 @@ form{
 .input{
     display: flex;
     flex-direction: column;
-}
-
-button{
-    width: 
 }
