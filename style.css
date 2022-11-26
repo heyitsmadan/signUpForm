@@ -3,8 +3,24 @@
     padding: 0;
 }
 
+html,body{
+    height:100%;
+}
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.image,.form{
+    height:100%;
+}
+
+.image{
+    width: 40%;
+}
+
+.form{
+    width: 60%;
 }
