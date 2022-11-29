@@ -171,6 +171,7 @@ a{
     all: unset;
     color: var(--inp-color);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 button{
