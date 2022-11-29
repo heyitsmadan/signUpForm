@@ -10,10 +10,7 @@
 
 :root{
     --bg-color: #202030;
-    --inp-color: var(--bg-color);
     --blue: #C1D4E2;
-    --true: #23CE6B;
-    --text-color: white;
 }
 
 html,body{
@@ -83,7 +80,7 @@ form{
 label{
     display: inline-block;
     font-size: 1rem;
-    color: var(--inp-color);
+    color: var(--bg-color);
     opacity: 0.8;
     margin-left: auto;
     position: absolute;
@@ -96,7 +93,7 @@ input{
     transition: all 250ms;
     border-bottom: solid 2px rgb(32,32,48,0.5);
     background-color: inherit;
-    color: var(--inp-color);
+    color: var(--bg-color);
     font-size: 1.3rem;
     text-align: center;
     width: 100%;
@@ -132,7 +129,6 @@ input:not(:placeholder-shown) ~ label{
 }
 
 .card{
-    /* width: 50%; */
     aspect-ratio: 1;
     border-radius: 100%;
     background-color: var(--blue);
@@ -170,7 +166,7 @@ button{
 
 a{
     all: unset;
-    color: var(--inp-color);
+    color: var(--bg-color);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -180,11 +176,8 @@ button{
 }
 
 button:hover{
-    /* background-color: #F1D302;
-    color: var(--bg-color); */
     transition: 250ms;
     transform: translateY(-5px);
-    /* box-shadow:inset 0px 0px 0px 4px #202030; */
 }
 
 button:active{
