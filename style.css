@@ -65,6 +65,7 @@ form{
     margin: 20px 0;
     gap: 20px;
     width: 100%;
+    position: relative;
 }
 
 .input{
@@ -231,4 +232,70 @@ input~.unmatch {
 	left: 0;
 }
 
+.strength{
+    position:relative;
+    height:20px;
+    border: solid 2px rgb(32,32,48,0.5);
+    border-radius: 10px;
+    width: 25%;
+    overflow:hidden;
+}
 
+span.text{
+    position: absolute;
+    color: rgb(32,32,48,0.5);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: translateY(-2px);
+    transition: 0.25s;
+    opacity: 0;
+    font-size: 1rem;
+}
+
+.red{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    left:0;
+    background-color: #C20114;
+    transition: 0.5s;
+}
+
+.yellow{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left:0;
+    background-color: #F1D302;
+    transition: 0.5s;
+}
+
+.lime{
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    left:0;
+    background-color: yellowgreen;
+    transition: 0.5s;
+}
+
+.green{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    background-color: #136F63;
+    transition: 0.5s;
+}
+
+.bgc{
+    width:0%;
+    left: 0;
+    transition: 0.5s;
+}
+
+#show{
+    opacity: 1;
+    transition: 0.25s;
+}
