@@ -6,49 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="image">
         <img class="bg" src="images/joel-filipe-RFDP7_80v5A-unsplash.jpg" alt="An image of a building">
     </div>
     <div class="form">
-        <form action="" method="post">
-            <div class="row">
-                <div class="input">
-                    <label for="firstName">First Name</label>
-                    <input type="text" name="lastName" id="firstName" placeholder="Ben">
+        <span class="signUp">SIGN UP</span>
+        <div class="card">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="input">
+                        <input type="text" name="lastName" placeholder=" " id="firstName">
+                        <span class="border"></span>
+                        <label for="firstName">first name</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="lastName" placeholder=" " id="lastName">
+                        <span class="border"></span>
+                        <label for="lastName">last name</label>
+                    </div>
                 </div>
-
-                <div class="input">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Dover">
+                <div class="row">
+                    <div class="email input">
+                        <input type="email" name="email" placeholder=" " id="email">
+                        <span class="border"></span>
+                        <span class="error"></span>
+                        <label for="email">email</label>
+                    </div>
+                    <!-- <div class="input">
+                        <input type="tel" name="phoneNumber" placeholder=" " id="phoneNumber">
+                        <span class="border"></span>
+                        <label for="phoneNumber">phone</label>
+                    </div> -->
                 </div>
-            </div>
-            <div class="row">
-                <div class="input">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                <div class="row">
+                    <div class="input">
+                        <input type="password" name="password" placeholder=" " id="password">
+                        <span class="border"></span>
+                        <label for="password">pass</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" name="confirmPassword" placeholder=" " id="confirmPassword">
+                        <span class="border"></span>
+                        <span class="unmatch"></span>
+                        <label for="confirmPassword">confirm</label>
+                    </div>
                 </div>
-
-                <div class="input">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber">
-                </div>
-            </div>
-            <div class="row">
-                <div class="input">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                </div>
-
-                <div class="input">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword">
-                </div>
-            </div>
-            <button type="submit">Create Account</button>
-        </form>
-        <h2 class="login">Already have an account? <a href="">Log in</a></h2>
+                <button>create account</button>
+            </form>
+            <p class="login">already have an account? <a href="">log in</a></p>
+        </div>
     </div>
 </body>
 </html>
